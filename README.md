@@ -20,4 +20,4 @@ Notes:
 - Assume output text will be viewed in a mono-spaced font on a plain text editor or basic terminal.
 - The minimum space between columns should be computed from the text and not hard-coded.
 
-[Source [https://rosettacode.org/wiki//Align_columns#JavaScript](https://rosettacode.org/wiki/Align_columns#JavaScript)]
+[Source [https://rosettacode.org/wiki/Align_columns#JavaScript](https://rosettacode.org/wiki/Align_columns#JavaScript)]
