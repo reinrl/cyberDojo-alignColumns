@@ -1,0 +1,87 @@
+
+> @ lint /sandbox
+> eslint --config ${CYBER_DOJO_SANDBOX}/.eslintrc.json /**/*.js
+
+
+> @ test /sandbox
+> jest --coverage
+
+  console.log
+    matchingBlocks: [ { letter: 'A', suitableBlocks: [ 4, 13 ] } ]
+
+      at answer (blockSpeller.js:24:11)
+
+  console.log
+    matchingBlocks: [
+      { letter: 'B', suitableBlocks: [ 0, 14 ] },
+      { letter: 'A', suitableBlocks: [ 4, 13 ] },
+      { letter: 'R', suitableBlocks: [ 6, 15 ] },
+      { letter: 'K', suitableBlocks: [ 1 ] }
+    ]
+
+      at answer (blockSpeller.js:24:11)
+
+  console.log
+    matchingBlocks: [
+      { letter: 'B', suitableBlocks: [ 0, 14 ] },
+      { letter: 'O', suitableBlocks: [ 0, 14 ] },
+      { letter: 'O', suitableBlocks: [ 0, 14 ] },
+      { letter: 'K', suitableBlocks: [ 1 ] }
+    ]
+
+      at answer (blockSpeller.js:24:11)
+
+  console.log
+    matchingBlocks: [
+      { letter: 'T', suitableBlocks: [ 5, 7 ] },
+      { letter: 'R', suitableBlocks: [ 6, 15 ] },
+      { letter: 'E', suitableBlocks: [ 6, 15 ] },
+      { letter: 'A', suitableBlocks: [ 4, 13 ] },
+      { letter: 'T', suitableBlocks: [ 5, 7 ] }
+    ]
+
+      at answer (blockSpeller.js:24:11)
+
+  console.log
+    matchingBlocks: [
+      { letter: 'C', suitableBlocks: [ 3, 18 ] },
+      { letter: 'O', suitableBlocks: [ 0, 14 ] },
+      { letter: 'M', suitableBlocks: [ 19 ] },
+      { letter: 'M', suitableBlocks: [ 19 ] },
+      { letter: 'O', suitableBlocks: [ 0, 14 ] },
+      { letter: 'N', suitableBlocks: [ 4, 13 ] }
+    ]
+
+      at answer (blockSpeller.js:24:11)
+
+  console.log
+    matchingBlocks: [
+      { letter: 'S', suitableBlocks: [ 9, 16 ] },
+      { letter: 'Q', suitableBlocks: [ 2, 8 ] },
+      { letter: 'U', suitableBlocks: [ 11 ] },
+      { letter: 'A', suitableBlocks: [ 4, 13 ] },
+      { letter: 'D', suitableBlocks: [ 2, 8 ] }
+    ]
+
+      at answer (blockSpeller.js:24:11)
+
+  console.log
+    matchingBlocks: [
+      { letter: 'C', suitableBlocks: [ 3, 18 ] },
+      { letter: 'O', suitableBlocks: [ 0, 14 ] },
+      { letter: 'N', suitableBlocks: [ 4, 13 ] },
+      { letter: 'F', suitableBlocks: [ 9, 16 ] },
+      { letter: 'U', suitableBlocks: [ 11 ] },
+      { letter: 'S', suitableBlocks: [ 9, 16 ] },
+      { letter: 'E', suitableBlocks: [ 6, 15 ] }
+    ]
+
+      at answer (blockSpeller.js:24:11)
+
+-----------------|---------|----------|---------|---------|-------------------
+File             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------|---------|----------|---------|---------|-------------------
+All files        |     100 |      100 |     100 |     100 |                   
+ alphaBlocks.js  |     100 |      100 |     100 |     100 |                   
+ blockSpeller.js |     100 |      100 |     100 |     100 |                   
+-----------------|---------|----------|---------|---------|-------------------

@@ -1,0 +1,59 @@
+FAIL ./blockSpeller.test.js
+  answer
+    ✓ Should be able to spell A (16 ms)
+    ✓ Should be able to spell BARK (2 ms)
+    ✕ Should not be able to spell BOOK (3 ms)
+    ✓ Should be able to spell TREAT (1 ms)
+    ✕ Should not be able to spell COMMON (2 ms)
+    ✓ Should be able to spell SQUAD (1 ms)
+    ✓ Should be able to spell CONFUSE (1 ms)
+
+  ● answer › Should not be able to spell BOOK
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: false
+    Received: true
+
+      16 |   scenarios.forEach((scenario) => {
+      17 |     it(`${scenario.shouldPass ? "Should" : "Should not"} be able to spell ${scenario.word}`, () => {
+    > 18 |       expect(answer(scenario.word)).toEqual(scenario.shouldPass);
+         |                                     ^
+      19 |     });
+      20 |   });
+      21 | });
+
+      at Object.<anonymous> (blockSpeller.test.js:18:37)
+
+  ● answer › Should not be able to spell COMMON
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: false
+    Received: true
+
+      16 |   scenarios.forEach((scenario) => {
+      17 |     it(`${scenario.shouldPass ? "Should" : "Should not"} be able to spell ${scenario.word}`, () => {
+    > 18 |       expect(answer(scenario.word)).toEqual(scenario.shouldPass);
+         |                                     ^
+      19 |     });
+      20 |   });
+      21 | });
+
+      at Object.<anonymous> (blockSpeller.test.js:18:37)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.493 s
+Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ test: `jest --coverage`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/sandbox/.npm/_logs/2023-01-30T15_19_53_239Z-debug.log
