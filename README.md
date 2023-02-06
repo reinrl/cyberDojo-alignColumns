@@ -1,56 +1,23 @@
-# This a copy of [your cyber-dojo exercise](https://cyber-dojo.org/kata/edit/f5ac46):
-- Exercise: `ABC Problem`
+# This a copy of [your cyber-dojo exercise](https://cyber-dojo.org/):
+- Exercise: `Align Columns`
 - Language & test-framework: `JavaScript, jest`
 
 # Instructions
-You are given a collection of ABC blocks (maybe like the ones you had when you were a kid).
-There are twenty blocks with two letters on each block.
-A complete alphabet is guaranteed amongst all sides of the blocks.
-The sample collection of blocks:
+Given a text file of many lines, where fields within a line are delineated by a single 'dollar' character, write a program that aligns each column of fields by ensuring that words in each column are separated by at least one space.
 
- (B O)
- (X K)
- (D Q)
- (C P)
- (N A)
- (G T)
- (R E)
- (T G)
- (Q D)
- (F S)
- (J W)
- (H U)
- (V I)
- (A N)
- (O B)
- (E R)
- (F S)
- (L Y)
- (P C)
- (Z M)
+For Example:
 
-Task
-Write a function that takes a string (word) and determines whether the word can be spelled with the given collection of blocks.
-The rules are simple:
-   1. Once a letter on a block is used that block cannot be used again
-   2. The function should be case-insensitive
-   3. Show the output on this page for the following 7 words in the following example
+Given$a$text$file$of$many$lines,$where$fields$within$a$line$
+are$delineated$by$a$single$'dollar'$character,$write$a$program
+that$aligns$each$column$of$fields$by$ensuring$that$words$in$each$
+column$are$separated$by$at$least$one$space.
 
-Example
+Notes:
+- The example input texts lines may, or may not, have trailing dollar characters.
+- Lines may, or may not, contain the same number of fields.
+- All columns should share the same alignment.
+- Consecutive space characters produced adjacent to the end of lines are insignificant for the purposes of the task.
+- Assume output text will be viewed in a mono-spaced font on a plain text editor or basic terminal.
+- The minimum space between columns should be computed from the text and not hard-coded.
 
->>> can_make_word("A")
-True
->>> can_make_word("BARK")
-True
->>> can_make_word("BOOK")
-False
->>> can_make_word("TREAT")
-True
->>> can_make_word("COMMON")
-False
->>> can_make_word("SQUAD")
-True
->>> can_make_word("CONFUSE")
-True
-
-[Source https://rosettacode.org/wiki/ABC_Problem]
+[Source [https://rosettacode.org/wiki//Align_columns#JavaScript](https://rosettacode.org/wiki/Align_columns#JavaScript)]
